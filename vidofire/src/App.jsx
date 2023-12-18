@@ -11,7 +11,8 @@ function App() {
       <h1 className="bg-green-400 text-black p-4 rounded-xl mb-4">
         Test Props
       </h1>
-      <Card />
+      <Card username='DELL' btnText="visit me" />
+      <Card username='Apple' btnText="click me" />
     </>
   );
 }
