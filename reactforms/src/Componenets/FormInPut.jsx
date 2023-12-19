@@ -1,12 +1,14 @@
+import { useState } from "react"
+import "./ForminPut.css"
 
-import "./FormInPut.css"
-
-
-const FormInPut = () => {
+const FormInPut = (props) => {
+  
   return (
     <div className='formInPut'>
-      <label>User Name</label>
-      <input />
+      {/* <label>User Name</label> */}
+      <input placeholder={props.placeholder}
+      onClick={(e) => props.setUsername(e.target.value)}/>
+
     </div>
   )
 }
